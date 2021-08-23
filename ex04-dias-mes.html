@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <script>
+        /*            Solicite ao usuário que informe o número correspondente a um
+                       mês, na faixa entre 1 e 12.            
+                      Usando a estrutura switch..case, informe de volta ao usuário quantos            
+                      dias possui o mês informado, conforme segue:
+                                * JANEIRO, MARÇO, MAIO, JULHO, AGOSTO, OUTUBRO e DEZEMBRO: 31 dias            
+                                * ABRIL, JUNHO, SETEMBRO e NOVEMBRO: 30 dias            
+                                * * FEVEREIRO: 28 ou 29 dias (em anos bissextos)        
+        */
+       let num = parseInt(prompt('Informe o mês desejado entre 1 e 12'))
+
+       if (isNaN(num)) {
+           alert ('O valor informado não é válido')
+       }
+       else {
+
+       switch (num)  {
+           case '1':
+            document.write('Janeiro tem 31 dias')
+               break
+            case '2':
+            document.write('Fevereiro tem 28 ou 29 se o ano for bissexto dias')
+                break
+            case '3':
+            document.write('Março tem 31 dias')
+                break
+            case '4':
+            document.write('Abril tem 30 dias')
+                break
+            case '5':
+            document.write('Maio tem 31 dias')
+                break
+            case '6':
+            document.write('Junho tem 30 dias')
+                break
+            case '7':
+            document.write('Julho tem 31 dias')
+                break
+            case '8':
+            document.write('Agosto tem 31 dias') 
+                break
+            case '9':
+            document.write('setembro tem 30 dias')
+                break
+            case '10':
+            document.write('Outubro tem 31 dias')
+                break
+            case '11':
+            document.write('Novembro tem 30 dias')
+                break
+            case '12':
+            document.write('Dezembro tem 31 dias')
+                break 
+            default: 
+            alert('Numero inválido')                                   
+        
+       }
+    }
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

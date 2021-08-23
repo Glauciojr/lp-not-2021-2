@@ -21,7 +21,7 @@
         let num1 = Number(prompt('Digite o primeiro numero')) // number e parsefloat convertem uma string em um numero com casas decimais
         let num2 = parseFloat(prompt('Informe o segundo número'))
         let oper = prompt('Informe um operador (+ - * X x / : )')
-
+        let resultado
         // Validação dos numeros
         if(isNaN(num1) || isNaN(num2)) {
             alert('Erro: não é possivel efetuar operação aritmética com os valores informados!')
@@ -29,22 +29,22 @@
         else {
             switch (oper) {
                 case '+':
-                    document.write(num1 + num2)
+                    resultado = num1 + num2
                     break
                 
                 case '-':
-                    document.write(num1 - num2)
+                    resultado = num1 - num2
                     break
                     
                 case '*':  // case vazio
                 case 'X':  // case vazio
                 case 'x':
-                    document.write(num1 * num2)
+                    resultado = num1 * num2
                     break
 
                 case '/':  // case vazio
                 case ':':
-                    document.write(num1 / num2)
+                    resultado = num1 / num2
                     break
 
                 default:  //else no switch
@@ -52,7 +52,12 @@
             }
         }
         
-
+        //document.write(num1 + ' ' + oper + ' ' + num2 + ' é igual a ' + resultado)
+        // Usando srtring templates
+        if(resultado !== undefined){
+        document.write(`${num1} ${oper} ${num2} é igual a ${resultado}`)
+        }
+        
     </script>
 </head>
 <body>
