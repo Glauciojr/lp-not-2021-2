@@ -34,9 +34,9 @@
  let num
         do {
 
-         num = prompt("Digite um numero de 0 à 9: ")
+         num = parseInt(prompt("Digite um numero de 0 à 9: "))
 
-        }  while (isNaN(num)) {
+        }  while (isNaN(num) || num < 0 || num > 9) {
           
         }
         switch (num) {
@@ -70,8 +70,8 @@
             case '9':
             document.write('A letra correspondente ao dígito informado é J')
                 break
-            default :
-                alert('Numero inválido, digite novamente um numero entre 0 e 9')     
+           // default :
+               // alert('Numero inválido, digite novamente um numero entre 0 e 9')     
 
         }
     
