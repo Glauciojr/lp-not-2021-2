@@ -74,8 +74,8 @@
 
   document.write('<hr>')
 
-  estacoes.splice(1, 0, 'Vila Imperador')
-  estacoes.splice(4, 0, 'Jardim Alvorada')
+  estacoes.splice(1, 0, 'Vila Imperador')  // ou estacoes.splice(estacoes.indexOf('Estação'), 0, 'Vila Imperador')
+  estacoes.splice(4, 0, 'Jardim Alvorada') // estacoes.splice(estacoes.indexOf(Aeroporto I), 0, 'Jardim Alvorada')
 
   for (let i = estacoes.length - 1; i >= 0; i--) {
     document.write(estacoes[i] + '<br>')
@@ -94,6 +94,7 @@
   estacoes.splice(9, 1)
   estacoes.splice(8, 1)
   estacoes.splice(2, 1)
+  
   for (r of estacoes) {
     document.write(r + '<br>')
   }
