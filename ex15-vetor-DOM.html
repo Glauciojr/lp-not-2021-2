@@ -29,19 +29,52 @@
 
         */
 
-        let estados = []
+        let est = []
 
-        estados.push('São Paulo', 'Santa Catarina', 'Rio Grande do Sul', 'Rio de Janeiro', 'Paraná', 'Minas Gerais', 'Espírito Santo')
+        est.unshift('São Paulo')
+        est.unshift('Santa Catarina')
+        est.unshift('Rio Grande do Sul')
+        est.unshift('Rio de Janeiro')
+        est.unshift('Paraná')
+        est.unshift('Minas Gerais')
+        est.unshift('Espírito Santo')
+
 
         const lista = document.getElementById('estados')
-
+        
+       /*
         const sub = document.createElement('li')
-        sub.id = 'es'
+        const sub1 = document.createElement('li')
+        const sub2 = document.createElement('li')
+        const sub3 = document.createElement('li')
+        const sub4 = document.createElement('li')
+        const sub5 = document.createElement('li')
+        const sub6 = document.createElement('li')
 
-        for (const lista of estados) {
-            
+
+        sub.textContent = est[0]
+        sub1.textContent = est[1]
+        sub2.textContent = est[2]
+        sub3.textContent = est[3]
+        sub4.textContent = est[4]
+        sub5.textContent = est[5]
+        sub6.textContent = est[6]
+
+
+        lista.appendChild(sub)
+        lista.appendChild(sub1)
+        lista.appendChild(sub2)
+        lista.appendChild(sub3)
+        lista.appendChild(sub4)
+        lista.appendChild(sub5)
+        lista.appendChild(sub6)
+        */
+
+        for (let estado of est) {
+            const item = document.createElement('li')
+            item.textContent = estado
+            lista.appendChild(item)
         }
-
 
 
                   
