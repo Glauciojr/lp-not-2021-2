@@ -9,9 +9,14 @@
 <script>
     let num = Number(prompt('Informe um número'))
 
-    if(num %2 === 0) {
+    if (isNaN(num)) {
+        alert('Digito inválido')
+    }
+
+    else if(num % 2 === 0) {
     alert('Esse numero é par')
     }
+    
     else {
     alert('Esse número é impar')
     }
